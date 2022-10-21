@@ -5,6 +5,11 @@
     color: #262626;
     
 }
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    margin-top: -11px;
+}
 .it2{
     margin-left: 52px;
 }
@@ -92,6 +97,9 @@
     padding-right: 153px;
     margin-bottom: 30px;
 }
+.dropdown_block{
+    font-weight: 700;
+}
 .ic_banner_dropdownWrapper {
     background-color: #fff;
     padding: 10px 10px;
@@ -109,6 +117,8 @@
     margin-left: -24px;
     height: 64px;
     width: 398px;
+    margin-top: -12%;
+    margin-left: 12px;
 }
 .dropdown-toggle{
     border: none;
@@ -135,6 +145,29 @@
     width: 65%;
     margin-left: 30%;
     font-weight: 600;
+}
+.calcBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #2c45ff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    min-width: 200px;
+    height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .ic_step_Group {
     position: relative;
@@ -267,9 +300,126 @@
 }
 
 .ic_footer_logoBlock{
-    margin-left: -31%;
+    margin-left: -16%;
+    margin-top: -10%;
 }
 .ic_footerBlock_group{
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 10%;
+}
+.ic_footer_heading h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #262626;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.ic_footer_block p {
+    font-size: 14px;
+    color: #504D57;
+    margin: 22px;
+    margin-left: 1px;
+    line-height: 25px;
+}
+.ic_footer_list ul li a {
+    color: #2c45ff;
+    display: inline-block;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.ic_footer_list{
+    margin-top: 20px;
+    margin-left: -33px;
+}
+
+.ic_footer_list ul{
+    list-style: none;
+}
+.ic_footer_copyright{
+    margin: auto;
+    margin-left: 39%;
+    margin-top: 59px;
+}
+.ic_address_list ul{
+    list-style: none;
+}
+
+@media (max-width: 767px){
+    .ic_banner_textWrapper h1{
+        width: 165%;
+        margin-left: -11px;
+    }
+    .ic_banner_textWrapper h3{
+        width: 140%;
+        margin-left: -10px;
+    }
+    .ic_heading h3{
+
+        width: 51%;
+        margin-left: 153px;
+        margin-top: 14%;
+
+    }
+    .ic_heading p{
+
+        width: 51%;
+        margin-left: 153px;
+        margin-top: 14%;
+
+    }
+    .card_container{
+        display: block;
+    }
+    .ic_step_Group{
+        display: block;
+    }
+    .step_number:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 18px);
+        width: 160px;
+        height: 2px;
+        background-color: #2c45ff;
+        display: none;
+    }
+    .ic_banner_dropdownWrapper {
+        display: none;
+        background-color: #fff;
+        padding: 10px 10px;
+        border-radius: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: -6%;
+        margin-left: -24px;
+        height: 64px;
+        width: 398px;
+        margin-top: -12%;
+        margin-left: 12px;
+    }
+    .dropdown-toggle{
+        display: none;
+    }
+    .ic_banner_calcBtn{
+        display:none
+    }
+    .card{
+    width: 134%;
+    margin-left: -28%;
+    }
+    .ic_footer_wrapper{
+        margin-left: -26%;
+    }
+    .ic_footerBlock_group{
+        margin-top: 15%;
+    }
+    
 }
