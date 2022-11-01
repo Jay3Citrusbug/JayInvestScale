@@ -68,7 +68,7 @@
 }
 
 .section {
-    padding: 80px 0px;
+    padding: 165px;
 }
 
 .row {
@@ -216,7 +216,22 @@
     margin: 0px auto 22px;
 
 }
-.step_number:not(:last-child)::after {
+.step_number2{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #2c45ff;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    border-radius: 100%;
+    margin: 0px auto 22px;
+}
+.step_number::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -346,6 +361,9 @@
 }
 
 @media (max-width: 767px){
+    .section{
+        padding: 56px;
+    }
     .ic_banner_textWrapper h1{
         width: 165%;
         margin-left: -11px;
@@ -356,16 +374,16 @@
     }
     .ic_heading h3{
 
-        width: 51%;
-        margin-left: 153px;
-        margin-top: 14%;
+        width: 48%;
+        margin-left: 197px;
+        margin-top: 12%;;
 
     }
     .ic_heading p{
 
-        width: 51%;
-        margin-left: 153px;
-        margin-top: 14%;
+        width: 109%;
+        margin-left: -3px;
+        margin-top: 6%;
 
     }
     .card_container{
@@ -386,24 +404,6 @@
     }
     .ic_banner_dropdownWrapper {
         display: none;
-        background-color: #fff;
-        padding: 10px 10px;
-        border-radius: 50px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-top: -6%;
-        margin-left: -24px;
-        height: 64px;
-        width: 398px;
-        margin-top: -12%;
-        margin-left: 12px;
     }
     .dropdown-toggle{
         display: none;
@@ -420,6 +420,14 @@
     }
     .ic_footerBlock_group{
         margin-top: 15%;
+    }
+    .foot{
+        margin-left: 65%;
+        margin-top: -40%;
+    }
+    .foot2{
+        margin-left: 62%;
+        margin-top: -35%;
     }
     
 }
